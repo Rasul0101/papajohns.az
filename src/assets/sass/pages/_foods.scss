@@ -1,0 +1,64 @@
+.foods {
+  padding-bottom: 40px;
+  .container {
+    .foods-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 25px;
+      width: 100%;
+      .card {
+        width: 342px;
+        margin-bottom: 5px;
+        height: 390px;
+        overflow: hidden;
+        .img {
+          cursor: pointer;
+          margin-bottom: 10px;
+          height: 231px;
+          width: 100%;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        .title {
+          display: flex;
+          justify-content: space-between;
+          padding-bottom: 10px;
+          p {
+            font-weight: 600;
+            font-size: 22px;
+            color: #171717;
+            line-height: 25px;
+          }
+          .btn-choose {
+            cursor: pointer;
+            padding: 0 21px;
+            background: #0f9675;
+            text-transform: uppercase;
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 18px;
+            text-align: center;
+            transition: all, 0.3s;
+            height: 39px;
+            line-height: 39px;
+            border-radius: 4px;
+            &:hover {
+              background: #096a52;
+            }
+          }
+        }
+        .composition {
+          font-family: Arial, sans-serif;
+          font-size: 16px;
+          color: #282828;
+          letter-spacing: 0px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}
