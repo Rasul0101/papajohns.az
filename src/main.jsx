@@ -7,6 +7,7 @@ import { Provider } from "react-redux";
 
 // Style
 import "./assets/sass/main.scss";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <Provider store={store}>

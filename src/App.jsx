@@ -12,19 +12,27 @@ import Dessert from "./pages/Dessert";
 import Sauce from "./pages/Sauce";
 import NotFound from "./pages/NotFound";
 
+// Components
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+
 const App = () => {
   return (
-    <Routes>
-      <Route exact path="/" element={<Home />} />
-      <Route exact path="/papadias" element={<Papadias />} />
-      <Route exact path="/pizza" element={<Pizza />} />
-      <Route exact path="/lunch" element={<Lunch />} />
-      <Route exact path="/salad" element={<Salad />} />
-      <Route exact path="/drink" element={<Drink />} />
-      <Route exact path="/dessert" element={<Dessert />} />
-      <Route exact path="/sauce" element={<Sauce />} />
-      <Route exact path="*" element={<NotFound />} />
-    </Routes>
+    <>
+      <Header />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/papadias" element={<Papadias />} />
+        <Route exact path="/pizza" element={<Pizza />} />
+        <Route exact path="/lunch" element={<Lunch />} />
+        <Route exact path="/salad" element={<Salad />} />
+        <Route exact path="/drink" element={<Drink />} />
+        <Route exact path="/dessert" element={<Dessert />} />
+        <Route exact path="/sauce" element={<Sauce />} />
+        <Route exact path="*" element={<NotFound />} />
+      </Routes>
+      <Footer />
+    </>
   );
 };
 

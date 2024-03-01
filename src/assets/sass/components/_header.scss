@@ -3,7 +3,7 @@ header {
   .header-top {
     padding: 0 0 12px;
     .container {
-      .row {
+      .row-header-top {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -56,16 +56,18 @@ header {
           .cart-box {
             position: relative;
             margin-top: 8px;
+            cursor: pointer;
             .basket-icon {
               font-size: 25px;
             }
             .count {
+              cursor: pointer;
               position: absolute;
               top: -6px;
               right: -10px;
               width: 24px;
               height: 24px;
-              border-radius: 50%;
+              border-radius: 50% !important;
               border: 2px solid #ffffff;
               background: #ad0f14;
               color: #ffffff;
@@ -160,7 +162,7 @@ header {
             justify-content: center;
             width: 33px;
             height: 33px;
-            border-radius: 50%;
+            border-radius: 50% !important;
             background: #0f9675;
             font-weight: 400;
             margin-left: 4px;
@@ -204,8 +206,8 @@ header {
             display: block;
             width: 80%;
             background: #ffffff;
-            border: 1px solid #0f9675;
-            border-radius: 8px;
+            border: 1px solid #0f9675 !important;
+            border-radius: 8px !important;
             height: 39px;
             line-height: 39px;
             color: #000000;
@@ -223,7 +225,7 @@ header {
             height: 39px;
             padding: 0 21px;
             background-color: #0f9675;
-            border-radius: 8px;
+            border-radius: 8px !important;
             font-size: 18px;
             font-weight: 600;
             color: #fff;
@@ -234,3 +236,76 @@ header {
   }
   // PromoCode End
 }
+
+// Cart Modal Start
+.modal-content {
+  background: #ffffff;
+  width: 650px;
+  padding: 25px 22px 22px 35px !important;
+  border-radius: 0 !important;
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: self-start;
+    padding: 0;
+    margin-bottom: 15px;
+    .title {
+      font-weight: 600;
+      font-size: 42px;
+      color: #000000;
+      line-height: 44px;
+    }
+    .close-modal-btn {
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 16px;
+      color: #000000;
+      line-height: 18px;
+      display: flex;
+      align-items: center;
+      span {
+        font-size: 22px;
+        margin-left: 5px;
+      }
+    }
+  }
+  .modal-main {
+    display: flex;
+    flex-direction: column;
+    .text {
+      margin-bottom: 35px !important;
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+  .modal-leg {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .back-menu-btn {
+      width: 268px;
+      background-color: #ad0f14;
+      font-weight: 700;
+      font-size: 18px;
+      text-align: center;
+      transition: all, 0.3s;
+      height: 39px;
+      line-height: 39px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      color: #fff;
+      &:hover {
+        background-color: #850509;
+      }
+    }
+    .total {
+      font-weight: 700;
+      font-size: 22px;
+      color: #171717;
+      line-height: 25px;
+    }
+  }
+}
+// Cart Modal End

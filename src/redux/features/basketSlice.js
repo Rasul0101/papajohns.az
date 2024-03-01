@@ -6,6 +6,7 @@ const basketSlice = createSlice({
     basketItems: [],
     quantity: 0,
     total: 0,
+    count: 1,
   },
 });
 

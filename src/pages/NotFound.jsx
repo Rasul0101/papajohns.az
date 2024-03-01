@@ -1,13 +1,8 @@
 // import React from 'react'
 
-// Components
-import Footer from "../components/Footer";
-import Header from "../components/Header";
-
 const NotFound = () => {
   return (
     <>
-      <Header />
       <div
         style={{
           minHeight: "315px",
@@ -20,7 +15,6 @@ const NotFound = () => {
       >
         NotFound qaqaşım, bizdə sən axtardığın olmur, səni alladıblar!!!
       </div>
-      <Footer />
     </>
   );
 };

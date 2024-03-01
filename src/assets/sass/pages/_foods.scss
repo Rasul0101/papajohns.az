@@ -1,3 +1,4 @@
+// Foods Start
 .foods {
   padding-bottom: 40px;
   .container {
@@ -12,6 +13,7 @@
         margin-bottom: 5px;
         height: 390px;
         overflow: hidden;
+        border-radius: 0;
         .img {
           cursor: pointer;
           margin-bottom: 10px;
@@ -32,10 +34,11 @@
             font-size: 22px;
             color: #171717;
             line-height: 25px;
+            width: 210px;
           }
           .btn-choose {
             cursor: pointer;
-            padding: 0 21px;
+            padding: 0 20px;
             background: #0f9675;
             text-transform: uppercase;
             color: #ffffff;
@@ -45,7 +48,7 @@
             transition: all, 0.3s;
             height: 39px;
             line-height: 39px;
-            border-radius: 4px;
+            border-radius: 4px !important;
             &:hover {
               background: #096a52;
             }
@@ -62,3 +65,162 @@
     }
   }
 }
+// Foods End
+
+// Product Modal Start
+.product-modal {
+  position: relative;
+  .modal-content {
+    padding: 40px !important;
+    background-color: #fff;
+    .close-modal-btn {
+      cursor: pointer;
+      position: absolute;
+      top: 10px;
+      right: 5px;
+      font-weight: 600;
+      font-size: 16px;
+      color: #000000;
+      line-height: 18px;
+      display: flex;
+      align-items: center;
+      span {
+        font-size: 22px;
+        margin-left: 5px;
+      }
+    }
+    .modal-main {
+      img {
+        width: 320px;
+        height: 220px;
+      }
+      .title {
+        font-weight: 600;
+        line-height: 44px;
+        font-size: 30px;
+        color: #000000;
+      }
+      .drop-down-item{
+        transition: all 0.2s ease-in-out;
+        padding: 10px ;
+        &:hover {
+        background-color: #0f9675;
+        }
+      }
+      .count-box {
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .counter {
+          display: flex;
+          align-items: center;
+          .decrement {
+            background-color: #0f9675;
+            border-radius: 3px 0 0 3px;
+            height: 29px;
+            width: 29px;
+            display: inline-block;
+            line-height: 29px;
+            font-weight: 700;
+            font-size: 20px;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+          }
+          .disable-dec {
+            background: grey;
+          }
+          .count {
+            display: inline-block;
+            background: #f1f1f1;
+            height: 29px;
+            width: 37px;
+            font-size: 16px;
+            color: #282828;
+            line-height: 29px;
+            text-align: center;
+          }
+          .increment {
+            border-radius: 0 3px 3px 0;
+            background: #0f9675;
+            height: 29px;
+            width: 29px;
+            display: inline-block;
+            line-height: 29px;
+            font-weight: 700;
+            font-size: 20px;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+          }
+        }
+        .price {
+          font-weight: 700;
+          line-height: 1;
+          font-size: 32px;
+          color: #000000;
+        }
+      }
+      .modal-leg {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .cart-box {
+          position: relative;
+          margin-top: 8px;
+          cursor: pointer;
+          .basket-icon {
+            font-size: 25px;
+          }
+          .count {
+            cursor: pointer;
+            position: absolute;
+            top: -6px;
+            right: -10px;
+            width: 24px;
+            height: 24px;
+            border-radius: 50% !important;
+            border: 2px solid #ffffff;
+            background: #ad0f14;
+            color: #ffffff;
+            font-size: 11px;
+            line-height: 21px;
+            text-align: center;
+          }
+          .total {
+            color: #000000;
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-left: 4px;
+          }
+        }
+        .add-to-cart-btn {
+          cursor: pointer;
+          padding: 0 21px;
+          background: #0f9675;
+          display: inline-block;
+          text-transform: uppercase;
+          color: #ffffff;
+          font-weight: 600;
+          font-size: 18px;
+          text-align: center;
+          transition: all, 0.3s;
+          height: 39px;
+          line-height: 39px;
+          border-radius: 4px;
+          &:hover {
+            background-color: #096a52;
+          }
+        }
+      }
+    }
+  }
+}
+// Product Modal End
